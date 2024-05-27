@@ -14,7 +14,7 @@ public class HomeController {
         model.addAttribute("name", principal.getName());
         model.addAttribute("emailAddress", principal.getFirstAttribute("email"));
         model.addAttribute("userAttributes", principal.getAttributes());
-        return "home";
+        return "default";
     }
 
 }
