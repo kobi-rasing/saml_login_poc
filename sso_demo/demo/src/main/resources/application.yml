@@ -1,0 +1,19 @@
+spring:
+#  thymeleaf:
+#    cache: false
+#    enabled: true
+#    prefix: classpath:templates/
+#    suffix: .html
+  security:
+    saml2:
+      relyingparty:
+        registration:
+          azure:
+            entity-id: api://a0b0dae1-410a-422a-8b31-c6eb228e2896
+            assertingparty:
+              metadata-uri: https://login.microsoftonline.com/d211aab8-d4bc-4e58-b090-fb720f0a0965/federationmetadata/2007-06/federationmetadata.xml?appid=a0b0dae1-410a-422a-8b31-c6eb228e2896
+#              single-sign-on-service-url-redirect: http://localhost:8080/login/saml2/sso/home
+#server:
+#  port: 8080
+#  servlet:
+#    context-path: /
